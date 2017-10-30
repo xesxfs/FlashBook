@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Extension>
+    <Name>GameBook</Name>
+	
+	<!-- This is used to load data at server start-up and provide it to callers as needed -->
+    <ManagedObjects>
+        <ManagedObject>
+            <Handle>ControllerFactory</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.oldworld.ControllerFactory</Path>
+        </ManagedObject>
+    </ManagedObjects>
+	
+	<!-- This handles the process of loading and unloading information about a user when they log in/out. -->
+    <EventHandlers>
+        <LoginHandlers>
+            <LoginHandler>
+                <Handle>LoginEventHandler</Handle>
+                <Type>Java</Type>
+                <Path>com.gamebook.oldworld.LoginLogoutHandler</Path>
+            </LoginHandler>
+        </LoginHandlers>
+        <LogoutHandlers>
+            <LogoutHandler>
+                <Handle>LogoutEventHandler</Handle>
+                <Type>Java</Type>
+                <Path>com.gamebook.oldworld.LoginLogoutHandler</Path>
+            </LogoutHandler>
+        </LogoutHandlers>
+    </EventHandlers>
+    <Plugins>
+		<!-- Needed for OldWorld only -->
+        <Plugin>
+            <Handle>WorldPlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.oldworld.WorldPlugin</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>AreaPlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.oldworld.AreaPlugin</Path>
+        </Plugin>
+		<!-- Needed for OldWorld and also other examples -->
+        <Plugin>
+            <Handle>TimeStampPlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.util.TimeStampPlugin</Path>
+        </Plugin>
+		<!-- Not needed for OldWorld -->
+        <Plugin>
+            <Handle>GMSInitializer</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.gamemanager.GMSInitializer</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>DiggingPlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.digging.DiggingPlugin</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>DiggingPlugin2</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.digging2.DiggingPlugin2</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>CoopGamePlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.coop.CoopGamePlugin</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>TankGame</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.tank.TankGame</Path>
+        </Plugin>
+    </Plugins>
+</Extension>
+

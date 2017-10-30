@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Extension>
+    <Name>GameBook</Name>
+    <Plugins>
+        <Plugin>
+            <Handle>TimeStampPlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.util.TimeStampPlugin</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>GMSInitializer</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.gamemanager.GMSInitializer</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>DiggingPlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.digging.DiggingPlugin</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>DiggingPlugin2</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.digging2.DiggingPlugin2</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>CoopGamePlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.coop.CoopGamePlugin</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>TankGame</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.tank.TankGame</Path>
+        </Plugin>
+    </Plugins>
+</Extension>
+

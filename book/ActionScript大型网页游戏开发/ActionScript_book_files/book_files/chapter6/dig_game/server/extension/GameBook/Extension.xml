@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Extension>
+    <Name>GameBook</Name>
+    <Plugins>
+        <Plugin>
+            <Handle>TimeStampPlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.util.TimeStampPlugin</Path>
+        </Plugin>
+        <Plugin>
+            <Handle>DiggingPlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.gamebook.digging.DiggingPlugin</Path>
+        </Plugin>
+    </Plugins>
+</Extension>
+

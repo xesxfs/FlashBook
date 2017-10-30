@@ -1,0 +1,18 @@
+
+------------------
+Bug List
+------------------
+
+--------------
+To Do:
+--------------
+2. Client: don't play "strain" sound when player runs over a switch without stopping
+
+
+--------------
+Done:
+--------------
+1. Server: does not set correct X and Y on characters on any level init besides the first.
+2. Server: switch
+4. Client: fix death bugs: (moving, laser, triggers)
+3. Client: sort blobs

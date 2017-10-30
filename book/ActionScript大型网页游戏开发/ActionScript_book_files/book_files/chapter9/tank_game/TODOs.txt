@@ -1,0 +1,17 @@
+
+* loading screen
+* loging / title screen 
+* in-game UI showing players in the game
+* sound effects
+	* pick up powerup
+	* click to add target positino
+	* target position failed
+
+//need teresa for these
+* tanks dying
+* tanks respawning
+* powerups spawning
+* pick up powerup
+
+
+
