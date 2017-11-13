@@ -34,7 +34,7 @@
 		
 		private var _itemsHolder:MovieClip;
 		private var _trowel:Trowel;
-		
+		private var _bg:Background;
 		private var _myUsername:String;
 		
 		[Embed(source='../../../assets/dig.swf', symbol='DigSound')]
@@ -59,8 +59,11 @@
 		public function initialize():void {
 			
 			//add a background
-			var bg:Background = new Background();
-			addChild(bg);
+			_bg = new Background();
+			
+			trace("bg y:", _bg.y);
+			//_bg.y =30;
+			addChild(_bg);
 			
 			//add the player list UI
 			_playerListUI = new List();
@@ -90,10 +93,12 @@
 			
 			//join a room to play the game
 			joinRoom();
+			
 		}
 		
 		private function playSound(snd:Sound):void {
 			snd.play();
+			
 		}
 		
 		/**

@@ -76,7 +76,7 @@
 			
 			//join a default room
 			joinRoom("Lobby");
-		}
+		}[Embed(source="../../../../lib/chat_assets.swc", symbol="Button_selectedUpSkin")]
 		
 		/**
 		 * Called when a user name in the list is selected

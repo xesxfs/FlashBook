@@ -44,6 +44,7 @@
 			ce.es = _es;
 			ce.clock = sc;
 			ce.initialize();
+			trace("onClockReady");
 			
 			addChild(ce);
 		}
@@ -82,6 +83,7 @@
 		public function onConnectionEvent(e:ConnectionEvent):void {
 			if (e.getAccepted()) {
 				//build the request
+				trace("onConnection");
 				var lr:LoginRequest = new LoginRequest();
 				lr.setUserName("player" + Math.round(1000 * Math.random()));
 				
@@ -97,7 +99,7 @@
 		 */
 		public function onLoginResponse(e:LoginResponse):void {
 			if (e.getAccepted()) {
-				
+				trace("onLogin");
 				initClock();
 				
 			} else {
